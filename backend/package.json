@@ -1,0 +1,24 @@
+{
+	"name": "pay-me",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"build": "npx hardhat compile",
+		"deploy-testnet": "npx hardhat run ./scripts/MyContract_deploy.js --network ETH_GOERLI",
+		"deploy": "npx hardhat run ./scripts/MyContract_deploy.js --network ETH_MAINNET",
+		"node": "npx hardhat node",
+		"deploy-local": "npx hardhat run ./scripts/MyContract_deploy.js --network localhost"
+	},
+	"dependencies": {
+		"@openzeppelin/contracts": "^4.7.3",
+		"dotenv": "^16.0.2"
+	},
+	"devDependencies": {
+		"@nomicfoundation/hardhat-toolbox": "^1.0.2",
+		"@typechain/ethers-v5": "^10.2.1",
+		"ethers": "^5.7.2",
+		"hardhat": "^2.10.1",
+		"typechain": "^8.3.1",
+		"typescript": "^5.2.2"
+	}
+}
